@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas App</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script type="module">
+        import init from './pkg/wasm_fluid_simulation.js';
+
+        async function run() {
+            await init();
+        }
+
+        run();
+    </script>
+</body>
+</html>
